@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  #container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #e5e5e5; */
+  }
+  ul li {
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+  }
+  ul li:hover {
+    background: #f3f3f3;
+  }
+  #list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #bf9200;
+} 
+
+#list input:checked + label {
+  text-decoration: line-through;
+  color:white;
+    background-color: green;
+}
+
+  .justify-content{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  h1 {
+    text-align: center;
+  }
+  span{
+    color:grey;
+  }
+  .delete{
+    width:25px;
+    text-align: center;
+    color:red;
+    border:1px solid grey;
+    border-radius: 25px;
+  }
+  .delete:hover{
+    background-color: red;
+    color:white;
+  }
+  hr{
+    color:grey;
+    opacity: 0.5;
+  }
+  .add-task {
+    width: 100%;
+      outline: none;
+      font-size: 15px;
+      padding: 11px;
+      border-radius: 25px;
+      border: 1px solid rgb(176, 176, 180)208, 208, 221;
+      margin-bottom: 3px;
+      
+  }
+  #add-button{
+    width:75px;
+    position: absolute;
+    padding:11px;
+    border-radius:25px;
+    background-color: rgb(93, 16, 194);
+    color:white;
+    margin-left: -70px;
+   
+
+  }
